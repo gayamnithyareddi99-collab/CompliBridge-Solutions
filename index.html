@@ -560,7 +560,7 @@ stay compliant and reduce operational burden.
 
 <a href="#contact" class="btn-primary">Book a Live Demo</a>
 
-<a href="https://video.pictory.ai/v2/preview/2026040422505911350bce24316ee42ccb2806807fe8cfa6c" class="btn-secondary">Watch Demo</a>
+
 
 </div>
 
@@ -1878,8 +1878,16 @@ A short 2–3 minute walkthrough showing how CompliBridge helps UK employers
 manage sponsor licence compliance, reduce risk, and improve visibility.
 </p>
 
-<!-- DEMO BUTTON -->
-<button class="demo-btn" onclick="openDemo()">▶ Watch Demo</button>
+<!-- PROFESSIONAL VIDEO EMBED -->
+<div class="video-embed-wrapper">
+  <iframe
+    src="https://video.pictory.ai/v2/preview/f80a28e3-9452-4081-9293-3914f5129a95?mode=player"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+    title="CompliBridge Demo Video">
+  </iframe>
+</div>
 
 <!-- TIMELINE -->
 <div class="timeline">
@@ -1936,19 +1944,6 @@ manage sponsor licence compliance, reduce risk, and improve visibility.
 
 </div>
 
-<!-- VIDEO POPUP -->
-<div class="video-modal" id="videoModal">
-<div class="video-box">
-
-<span class="close-btn" onclick="closeDemo()">×</span>
-
-<iframe id="demoVideo"
-src="demo.mp4"
-frameborder="0"
-allowfullscreen></iframe>
-
-</div>
-</div>
 
 </section>
 
@@ -1984,6 +1979,25 @@ color:#555;
 max-width:650px;
 margin:auto;
 margin-bottom:30px;
+}
+
+/* INLINE VIDEO EMBED */
+.video-embed-wrapper{
+position:relative;
+width:100%;
+max-width:900px;
+margin:0 auto 30px;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,0.18);
+background:#000;
+aspect-ratio:16/9;
+}
+.video-embed-wrapper iframe{
+position:absolute;
+top:0;left:0;
+width:100%;height:100%;
+border:none;
 }
 
 /* BUTTON */
